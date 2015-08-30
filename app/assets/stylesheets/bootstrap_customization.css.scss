@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Arizonia);
+
+$body-bg: 															#bdc3c7;
+$jumbotron-bg: 													white;
+$font-family-sans-serif:                'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$navbar-height:                        	45px;
+$navbar-default-bg: 										white;
+$navbar-default-link-hover-color: 			#0EED0E;
+$navbar-default-link-active-color:			#0EED0E;
+
+$brand-primary: 												#0EED0E;
+
+$btn-default-color:											#0EED0E;
+$btn-default-bg:												#ecf0f1;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.cursive {
+	font-family: 'Arizonia', 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.lime {
+	color: #0EED0E !important;
+}
+
+.center {
+	text-align:center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
