@@ -20,8 +20,13 @@
         <li><%= link_to "News", root_path %></li>
         <li><%= link_to "Schedule/Results", root_path %></li>
         <li><%= link_to "Roster", root_path %></li>
-        <li><%= link_to "Contact Us", root_path %></li>
-        <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Sign In", new_user_session_path %></li></button>
+        <% if user_signed_in? %>
+          <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li> 
+        <% else %>
+          <li><%= link_to "Contact Us", root_path %></li>
+          <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Sign In", new_user_session_path %></li></button>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
