@@ -1,9 +1,9 @@
-<div class="container col-md-6 col-md-offset-3">
+<div class="container col-md-6 col-md-offset-3 first-item">
   <div class="panel panel-default">
     
     <div class="panel-heading">
-      <h1>Edit <%= resource_name.to_s.humanize %> - <%= current_user.firstname %> <%= current_user.lastname %>
-      <%= image_tag @user.avatar.url(:thumb), class: "account-avatar" %><h1>
+      <h1><%= image_tag @user.avatar.url(:thumb), class: "account-avatar" %>Edit <%= resource_name.to_s.humanize %> - <%= current_user.firstname %> <%= current_user.lastname %>
+      </h1>
     </div>
 
     <div class="panel-body">
