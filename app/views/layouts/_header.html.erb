@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About us", root_path %></li>
-        <li><%= link_to "Sponsors", root_path %></li>
-        <li><%= link_to "News", root_path %></li>
-        <li><%= link_to "Schedule/Results", root_path %></li>
-        <li><%= link_to "Roster", root_path %></li>
+        <li><%= link_to "About us", root_path(anchor:"about") %></li>
+        <li><%= link_to "Sponsors", root_path(anchor:"sponsors") %></li>
+        <li><%= link_to "News", root_path(anchor:"news") %></li>
+        <li><%= link_to "Schedule/Results", root_path(anchor:"schedule") %></li>
+        <li><%= link_to "Roster", root_path(anchor:"roster") %></li>
         <% if user_signed_in? %>
           <li><%= link_to "Account Settings", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li> 
         <% else %>
-          <li><%= link_to "Contact Us", root_path %></li>
+          <li><%= link_to "Contact Us", root_path(anchor:"contact") %></li>
           <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Sign In", new_user_session_path %></li></button>
         <% end %>
       </ul>
