@@ -4,6 +4,8 @@
 $body-bg: 															#bdc3c7;
 $jumbotron-bg: 													white;
 $font-family-sans-serif:                'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base:												12px;
+$font-size-h2:													3.5em;
 
 $navbar-height:                        	45px;
 $navbar-default-bg: 										white;
@@ -17,6 +19,16 @@ $btn-default-bg:												#ecf0f1;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+html, body {
+	height: 100%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+body {
+    padding-top: 45px; 
+}
 
 .cursive {
 	font-family: 'Arizonia', 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -35,12 +47,13 @@ $btn-default-bg:												#ecf0f1;
 }
 
 .first-item {
-	margin-top: 60px;
+	margin-top: 15px;
 }
 
 .header-full {
-	margin-top: 45px;
-	height: 600px;
+	margin-top: 0;
+	margin-bottom: 0;
+	min-height: 655px;
 	background-image: url("header_background.jpg");
 	background-size: cover;
   background-repeat: no-repeat;
@@ -49,4 +62,12 @@ $btn-default-bg:												#ecf0f1;
 #main-title {
 	margin-top: 24%;
 	font-size: 700%;
+}
+
+.no-margin-top {
+	margin-top:0;
+}
+
+.title {
+	margin-bottom: 40px;
 }
